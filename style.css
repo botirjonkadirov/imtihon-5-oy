@@ -1,0 +1,229 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    /* object-fit: cover; */
+  }
+  ul,
+  ol {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  html {
+    height: 100%;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+  }
+  body {
+    height: 100%;
+    display: flex;
+    font-size: 1.4rem;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    background-color: var(--bgColor);
+    color: var(--black);
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .btn {
+    display: flex;
+    font-size: 1.6rem;
+    line-height: 21.82px;
+    font-weight: 600;
+    gap: 0.8rem;
+    align-items: center;
+    padding-top: 2.3rem;
+    padding-bottom: 2.4rem;
+    color: var(--black);
+  }
+  .headingh1 {
+    display: flex;
+    align-items: center;
+    height: 100;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* background-color: blue; */
+    background-color: var(--white);
+  }
+  .formInput {
+    border-style: none;
+    background: transparent;
+}
+.input {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+.formInput {
+  color: var(--black);
+}
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.form form {
+      background-color: var(--white);
+    display: flex;
+    align-items: center;
+    padding-left: 3.2rem;
+    width: 480px;
+    height: 56px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    /* background-color: aqua; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 4.8rem;
+  }
+  .option2 {
+    width: 200px;
+    height: 56px;
+    border: 1px solid transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    padding-left: 2.4rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 5rem;
+    background-color: var(--white);
+    color: var(--black);
+  }
+ 
+  .hidden {
+    display: none !important;
+  }
+  .container {
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 2rem;
+    margin: 0 auto;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .list {
+    background-color: var(--white);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 264px;
+    height: 336px;
+    border: 1px solid transparent;
+  }
+  li h3,p {
+    padding-left: 2.4rem;
+  }
+  li h3 {
+    padding-top: 2.4rem;
+    padding-bottom: 0.8rem;
+  }
+  .ul {
+    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(264px, 1fr));
+  gap: 2rem;
+    margin-top: 4.8rem;
+    padding-bottom: 4.5rem;
+  }
+  ul img {
+    height: 160px;
+    width: 264px;
+  }
+  :root {
+    --white: #fff;
+    --black: #000;
+    --bgColor: #f2f2f2;
+  }
+  .darkMode {
+    --white: #2B3844;
+    --black: #fff;
+    --bgColor: #202C36;
+  }
+
+  @media (max-width: 750px) {
+    .form {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 750px) {
+    .form form {
+      width: 350px;
+      height: 35px;
+    }
+  }
+
+  @media (max-width: 385px) {
+    .form form {
+      width: 250px;
+      height: 35px;
+    }
+    .headingh1{
+      font-size: 1rem;
+    }
+    .btn {
+      font-size: 1rem;
+    }
+  }

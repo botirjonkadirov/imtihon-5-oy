@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    <link rel="stylesheet" href="./style.css">
+    <title>Imtihon</title>
+</head>
+<body>
+    <div class="container headingh1"><h2>Where in the world?</h2>
+        <button id="darkBtn" class="btn"><img src="./img/moon-icon.svg" alt="moon" width="20" height="20"><span>Dark Mode</span></button>
+        <button id="lightBtn" class="btn hidden"><img class="img" src="./img/sun-icon.svg" alt="moon" width="20" height="20"><span>Light Mode</span></button>
+    </div>
+    <div class="form container">
+        <form id="form">
+            <div class="input">
+                <img src="./img/search.png" alt="search" width="18" height="18">
+                <input
+                class="formInput"
+                type="search"
+                name="user-search"
+                id="form__input"
+                placeholder="Search for a country…"
+                aria-label="search"
+                autocomplete="off"
+                      />
+            </div>
+        </form>
+
+        <div class="option">
+            <select class="option2" name="selection" id="selection" aria-placeholder="Filter by Region">
+                <option value=""disabled selected hidden>Filter by Region</option>
+                <div class="optionChild">
+                    <option id="africa" value="Africa">Africa</option>
+                    <option id="america" value="Americas">Americas</option>
+                    <option id="asia" value="Asia">Asia</option>
+                    <option id="europe" value="Europe">Europe</option>
+                    <option id="oceania" value="Oceania">Oceania</option>
+                </div>
+            </select>
+        </div>
+    </div>
+
+   <ul class="ul container" id="ul">
+ 
+   </ul>
+
+
+
+
+    <div class="overlay hidden" id="overlay">
+        <div class="lds-ring">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+  
+    <script type="module" src="./app.js"></script>
+    <script src="./mode.js"></script>
+    <script type="module" src="./request.js"></script>
+</body>
+</html>
